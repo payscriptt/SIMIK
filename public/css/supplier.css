@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+/* TOPBAR */
+.topbar {
+    height: 60px;
+    background: #58AFC4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    color: white;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.user-menu a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    background: #f2f2f2;
+    padding: 20px 0;
+    border-right: 2px solid #ddd;
+    flex-shrink: 0;
+    overflow-y: auto;
+}
+
+.menu-section {
+    margin-bottom: 25px;
+}
+
+.sidebar h4 {
+    padding: 0 20px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #888;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 8px 15px 8px 30px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar li.active {
+    color: #58AFC4;
+    font-weight: bold;
+}
+
+/* CONTENT AREA */
+.content {
+    flex: 1;
+    padding: 25px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 50px; /* Memberi jarak dari sidebar */
+}
+
+/* FORM LAYOUT UNTUK SUPPLIER (Lebih besar/tengah) */
+.form-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    padding: 30px;
+    width: 350px;
+    border: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-title {
+    color: #58AFC4;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: #f2f2f2;
+    font-size: 13px;
+    border-left: 3px solid #58AFC4;
+}
+
+/* BUTTONS */
+.btn-submit {
+    background-color: #58AFC4;
+    color: white;
+    border: none;
+    width: 200px;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(88, 175, 196, 0.3);
+}
+
+.btn-submit:hover {
+    background-color: #499db2;
+}

@@ -1,0 +1,28 @@
+/* Sidebar Toggle Styles */
+.sidebar {
+    transition: margin-left 0.3s ease;
+}
+
+.sidebar.collapsed {
+    margin-left: -220px; /* Assuming all sidebars are 220px */
+}
+
+.sidebar-toggle-btn {
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    padding: 5px;
+}
+
+.sidebar-toggle-btn:hover {
+    color: #e0e0e0;
+}
+
+/* Ensure the logo container displays correctly with the button */
+.topbar .logo {
+    display: flex;
+    align-items: center;
+}
